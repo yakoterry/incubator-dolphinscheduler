@@ -207,7 +207,8 @@ public abstract class AbstractCommandExecutor {
         // merge error information to standard output stream
         processBuilder.redirectErrorStream(true);
         // setting up user to run commands
-        processBuilder.command("sudo", "-u", tenantCode, commandType(), commandFile);
+        //processBuilder.command("sudo", "-u", tenantCode, commandType(), commandFile);
+        processBuilder.command(commandType(), commandFile);
 
         process = processBuilder.start();
 

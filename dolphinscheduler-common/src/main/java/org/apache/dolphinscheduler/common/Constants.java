@@ -751,7 +751,7 @@ public final class Constants {
     /**
      * application regex
      */
-    public static final String APPLICATION_REGEX = "application_\\d+_\\d+";
+    public static final String APPLICATION_REGEX = "skip_application_\\d+_\\d+";
     public static final String PID = "pid";
     /**
      * month_begin
